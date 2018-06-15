@@ -12,4 +12,3 @@ verify_ssl = true
 aiohttp = "*"
 "aiohttp_jinja2" = "*"
 uvloop = "*"
-cchardet = "*"
