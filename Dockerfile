@@ -4,7 +4,7 @@
 # OS Support also exists for jessie & stretch (slim and full).
 # See https://hub.docker.com/r/library/python/ for all supported Python
 # tags from Docker Hub.
-FROM python3.6:alpine
+FROM python:alpine
 
 # If you prefer miniconda:
 #FROM continuumio/miniconda3
