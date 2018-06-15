@@ -22,7 +22,7 @@ ADD . /app
 # Using pipenv:
 RUN python3 -m pip install pipenv
 RUN pipenv install --ignore-pipfile
-CMD ["pipenv", "run", "python3", "-m", "myfirstask"]
+CMD ["pipenv", "run", "./run.py"]
 
 # Using miniconda (make sure to replace 'myenv' w/ your environment name):
 #RUN conda env create -f environment.yml
