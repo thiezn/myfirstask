@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block metadescr %}<meta name="description" content="About us">{% endblock metadescr %}
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<h1>About us</h1>>
+<table border=1>
+<tr>
+  <th>Name</th>
+  <th>Occupation</th>
+  <th>Skillset</th>
+</tr>
+{% for user in users %}
+<tr>
+  <td>{{ user.name }}</td>
+  <td>{{ user.occupation }}</td>
+  <td>{{ user.skillset }}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock content %}
