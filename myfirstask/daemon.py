@@ -51,7 +51,7 @@ class Daemon:
 
         logging.info('Initialising jinja2 modules')
         aiohttp_jinja2.setup(
-            self.app, loader=jinja2.PackageLoader('demoapp', 'templates')
+            self.app, loader=jinja2.PackageLoader('myfirstask', 'templates')
         )
 
         logging.info('Initialising Web routes')
